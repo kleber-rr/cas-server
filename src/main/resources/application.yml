@@ -1,0 +1,8 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:/etc/cas/thekeystore
+    key-store-password: changeit
+spring:
+  main:
+    allow-bean-definition-overriding: true

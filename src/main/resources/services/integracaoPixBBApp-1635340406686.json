@@ -1,0 +1,21 @@
+{
+  @class: org.apereo.cas.services.RegexRegisteredService
+  serviceId: https://localhost:8442/login/cas
+  name: integracaoPixBBApp
+  id: 1635340406686
+  description: API de geração de PIX do Banco do Brasil
+  proxyTicketExpirationPolicy:
+  {
+    @class: org.apereo.cas.services.DefaultRegisteredServiceProxyTicketExpirationPolicy
+  }
+  serviceTicketExpirationPolicy:
+  {
+    @class: org.apereo.cas.services.DefaultRegisteredServiceServiceTicketExpirationPolicy
+  }
+  evaluationOrder: 1
+  attributeReleasePolicy:
+  {
+    @class: org.apereo.cas.services.DenyAllAttributeReleasePolicy
+  }
+  logoutUrl: https://localhost:8442/exit/cas
+}
